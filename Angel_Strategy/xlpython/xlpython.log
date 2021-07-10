@@ -1,0 +1,59 @@
+pythoncom error: Python error invoking COM method.
+
+Traceback (most recent call last):
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 278, in _Invoke_
+    return self._invoke_(dispid, lcid, wFlags, args)
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 283, in _invoke_
+    return S_OK, -1, self._invokeex_(dispid, lcid, wFlags, args, None, None)
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 586, in _invokeex_
+    return func(*args)
+  File "C:\Users\lenovo\Desktop\Algo_test\Angel_Strategy\xlpython\xlpyserver.py", line 177, in Call
+    return ToVariant(getattr(obj, method)(*pargs, **kwargs))
+  File "C:\Users\lenovo\Desktop\Algo_test\Angel_Strategy\xlpython\__init__.py", line 100, in udf_script
+    exec(compile(f.read(), filename, "exec"), vars)
+  File "c:\users\lenovo\desktop\algo_test\angel_strategy\algo_excel.py", line 49
+    update_time = = str(order_details.iloc[0]['updatetime'])
+                  ^
+SyntaxError: invalid syntax
+pythoncom error: Python error invoking COM method.
+
+Traceback (most recent call last):
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 278, in _Invoke_
+    return self._invoke_(dispid, lcid, wFlags, args)
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 283, in _invoke_
+    return S_OK, -1, self._invokeex_(dispid, lcid, wFlags, args, None, None)
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 586, in _invokeex_
+    return func(*args)
+  File "C:\Users\lenovo\Desktop\Algo_test\Angel_Strategy\xlpython\xlpyserver.py", line 175, in Call
+    return ToVariant(obj(*pargs, **kwargs))
+  File "c:\users\lenovo\desktop\algo_test\angel_strategy\algo_excel.py", line 54, in place_order
+    return str(order_id) + "," + order_status + "," + traded_price + "," + reject_reason + "," + update_time
+UnboundLocalError: local variable 'reject_reason' referenced before assignment
+pythoncom error: Python error invoking COM method.
+
+Traceback (most recent call last):
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 278, in _Invoke_
+    return self._invoke_(dispid, lcid, wFlags, args)
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 283, in _invoke_
+    return S_OK, -1, self._invokeex_(dispid, lcid, wFlags, args, None, None)
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 586, in _invokeex_
+    return func(*args)
+  File "C:\Users\lenovo\Desktop\Algo_test\Angel_Strategy\xlpython\xlpyserver.py", line 175, in Call
+    return ToVariant(obj(*pargs, **kwargs))
+  File "c:\users\lenovo\desktop\algo_test\angel_strategy\algo_excel.py", line 55, in place_order
+    return str(order_id) + "," + order_status + "," + traded_price + "," + reject_reason + "," + update_time
+UnboundLocalError: local variable 'reject_reason' referenced before assignment
+pythoncom error: Python error invoking COM method.
+
+Traceback (most recent call last):
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 278, in _Invoke_
+    return self._invoke_(dispid, lcid, wFlags, args)
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 283, in _invoke_
+    return S_OK, -1, self._invokeex_(dispid, lcid, wFlags, args, None, None)
+  File "C:\old_Python\lib\site-packages\win32com\server\policy.py", line 586, in _invokeex_
+    return func(*args)
+  File "C:\Users\lenovo\Desktop\Algo_test\Angel_Strategy\xlpython\xlpyserver.py", line 175, in Call
+    return ToVariant(obj(*pargs, **kwargs))
+  File "c:\users\lenovo\desktop\algo_test\angel_strategy\algo_excel.py", line 58, in place_order
+    return str(order_id) + "," + order_status + "," + traded_price + "," + reject_reason + "," + update_time
+NameError: name 'reject_reason' is not defined
